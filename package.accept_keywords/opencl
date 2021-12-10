@@ -1,0 +1,9 @@
+dev-libs/rocm-opencl-runtime ~amd64
+dev-libs/rocr-runtime ~amd64
+dev-libs/rocclr ~amd64
+dev-libs/rocm-comgr ~amd64
+dev-libs/rocm-device-libs ~amd64
+dev-util/rocm-cmake ~amd64
+dev-util/clinfo ~amd64
+sys-devel/llvm-roc ~amd64
+dev-libs/roct-thunk-interface ~amd64
