@@ -20,3 +20,7 @@ location = /var/db/repos/guru
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/guru.git
 
+[inode64-overlay]
+location = /var/db/repos/inode64-overlay
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/inode64-overlay.git
