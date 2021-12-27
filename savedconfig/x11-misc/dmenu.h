@@ -1,1 +1,1 @@
-dmenu
+dmenu-5.0
