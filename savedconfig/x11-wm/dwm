@@ -103,36 +103,36 @@ static Key keys[] = {
 	{ WINKEY|SHIFT,             	XK_j,     	rotatestack,    {.i = +1 } },
 	{ WINKEY|SHIFT,             	XK_k,     	rotatestack,    {.i = -1 } },
 	/* number of masters */
-	{ MODKEY,                       XK_i,     	incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,     	incnmaster,     {.i = -1 } },
+	{ MODKEY,			XK_i,     	incnmaster,     {.i = +1 } },
+	{ MODKEY,			XK_d,     	incnmaster,     {.i = -1 } },
 	/* adjust mfact */
-	{ MODKEY,                       XK_h,     	setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,     	setmfact,       {.f = +0.05} },
+	{ MODKEY,			XK_h,     	setmfact,       {.f = -0.05} },
+	{ MODKEY,			XK_l,     	setmfact,       {.f = +0.05} },
 	/* adjust cfact */
-	{ WINKEY|SHIFT,             	XK_h,     	setcfact,       {.f = +0.25} },
-	{ WINKEY|SHIFT,             	XK_l,     	setcfact,       {.f = -0.25} },
-	{ WINKEY|SHIFT,             	XK_o,     	setcfact,       {.f =  0.00} },
+	{ WINKEY|SHIFT,			XK_h,     	setcfact,       {.f = +0.25} },
+	{ WINKEY|SHIFT,			XK_l,     	setcfact,       {.f = -0.25} },
+	{ WINKEY|SHIFT,			XK_o,     	setcfact,       {.f =  0.00} },
 	/* gaps */
-	{ MODKEY|WINKEY,              	XK_equal,	incrgaps,       {.i = +1 } },
-	{ MODKEY|WINKEY,    		XK_minus, 	incrgaps,       {.i = -1 } },
-	{ MODKEY|WINKEY,              	XK_g,     	togglegaps,     {0} },
-	{ MODKEY|WINKEY,    		XK_0,     	defaultgaps,    {0} },
+	{ MODKEY|WINKEY,		XK_equal,	incrgaps,       {.i = +1 } },
+	{ MODKEY|WINKEY,		XK_minus, 	incrgaps,       {.i = -1 } },
+	{ MODKEY|WINKEY,		XK_g,     	togglegaps,     {0} },
+	{ MODKEY|WINKEY,		XK_0,     	defaultgaps,    {0} },
 	/* layouts */
 	{ WINKEY|CTRL,			XK_f,     	setlayout,      {.v = &layouts[1]} }, // floating (no layout)
 	{ WINKEY|CTRL,			XK_t,     	setflexlayout,  {.i = 261 } }, // default tile
 	{ WINKEY|CTRL,			XK_m,     	setflexlayout,  {.i =   6 } }, // monocle
-	{ WINKEY|CTRL,          	XK_d,     	setflexlayout,  {.i = 262 } }, // deck layout
-	{ WINKEY|CTRL,          	XK_b,     	setflexlayout,  {.i = 272 } }, // bstack layout
-	{ WINKEY|CTRL,          	XK_g,     	setflexlayout,  {.i =   7 } }, // grid
-	{ WINKEY|CTRL,          	XK_c,     	setflexlayout,  {.i = 293 } }, // centered master
+	{ WINKEY|CTRL,			XK_d,     	setflexlayout,  {.i = 262 } }, // deck layout
+	{ WINKEY|CTRL,			XK_b,     	setflexlayout,  {.i = 272 } }, // bstack layout
+	{ WINKEY|CTRL,			XK_g,     	setflexlayout,  {.i =   7 } }, // grid
+	{ WINKEY|CTRL,			XK_c,     	setflexlayout,  {.i = 293 } }, // centered master
 	/* tiling control  */
-	{ WINKEY|CTRL,           	XK_t,      	rotatelayoutaxis, {.i = 0} }, // flextile, 0 = layout axis 
-	{ WINKEY|CTRL,           	XK_j,    	rotatelayoutaxis, {.i = 1} }, // flextile, 1 = master axis 
-	{ WINKEY|CTRL, 			XK_k,    	rotatelayoutaxis, {.i = 2} }, // flextile, 2 = stack axis 
-	{ WINKEY|CTRL,           	XK_Tab, 	mirrorlayout,     {0} },      // flextile, flip master and stack areas 
+	{ WINKEY|CTRL,			XK_n,      	rotatelayoutaxis, {.i = 0} }, // flextile, 0 = layout axis 
+	{ WINKEY|CTRL,			XK_j,    	rotatelayoutaxis, {.i = 1} }, // flextile, 1 = master axis 
+	{ WINKEY|CTRL,			XK_k,    	rotatelayoutaxis, {.i = 2} }, // flextile, 2 = stack axis 
+	{ WINKEY|CTRL,			XK_Tab, 	mirrorlayout,     {0} },      // flextile, flip master and stack areas 
 	/* window control */
 	{ WINKEY,                       XK_space, 	setlayout,      {0} },
-	{ WINKEY|SHIFT,             	XK_c,     	killclient,     {0} },
+	{ MODKEY|SHIFT,             	XK_c,     	killclient,     {0} },
 	{ WINKEY|SHIFT,             	XK_space, 	togglefloating, {0} },
 	{ WINKEY|SHIFT,             	XK_f,     	togglefullscr,  {0} },
 	/* applications */

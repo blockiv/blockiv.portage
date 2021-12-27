@@ -1,4 +1,4 @@
-media-video/mpv blueray dvd lua vaapi vdpau vulkan
+media-video/mpv bluray dvd lua vaapi vdpau vulkan
 # required by media-video/mpv-0.33.1-r2::gentoo
 # required by mpv (argument)
 >=media-video/ffmpeg-4.4-r1 vdpau vaapi opus
