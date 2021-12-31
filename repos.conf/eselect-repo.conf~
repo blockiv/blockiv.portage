@@ -5,11 +5,6 @@ location = /var/db/repos/mv
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/mv.git
 
-[lto-overlay]
-location = /var/db/repos/lto-overlay
-sync-type = git
-sync-uri = https://github.com/gentoo-mirror/lto-overlay.git
-
 [steam-overlay]
 location = /var/db/repos/steam-overlay
 sync-type = git
@@ -20,7 +15,3 @@ location = /var/db/repos/guru
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/guru.git
 
-[inode64-overlay]
-location = /var/db/repos/inode64-overlay
-sync-type = git
-sync-uri = https://github.com/gentoo-mirror/inode64-overlay.git
