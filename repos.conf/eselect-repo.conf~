@@ -1,10 +1,5 @@
 # created by eselect-repo
 
-[mv]
-location = /var/db/repos/mv
-sync-type = git
-sync-uri = https://github.com/gentoo-mirror/mv.git
-
 [steam-overlay]
 location = /var/db/repos/steam-overlay
 sync-type = git
@@ -15,3 +10,10 @@ location = /var/db/repos/guru
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/guru.git
 
+[raiagent]
+location = /var/db/repos/raiagent
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/raiagent.git
+
+[blockiv]
+location = /var/db/repos/blockiv
