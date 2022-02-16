@@ -23,8 +23,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-/* static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }; */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+/*static const char *tags[] = { "", "", "", "", "", "", "", "", "" };*/
 
 static const Rule rules[] = {
 	{ "Firefox",  		NULL,  	NULL,		1,		0,           -1 },
@@ -33,6 +33,7 @@ static const Rule rules[] = {
 	{ "Spotify",  		NULL,	NULL,		1 << 6,       	0,           -1 },
 	{ "Virt-manager",  	NULL,	NULL,		1 << 5,       	0,           -1 },
 	{ "VSCodium",  		NULL,	NULL,		1 << 2,       	0,           -1 },
+	{ "Galculator",  	NULL,	NULL,		0,       	1,           -1 },
 };
 
 /* layout(s) */
@@ -88,6 +89,7 @@ static const char *spotify[] = { "spotify", NULL };
 static const char *discord[] = { "~/.local/bin/discord", NULL };
 static const char *telegram[] = { "telegram-desktop", NULL };
 static const char *virt[] = { "virt-manager", NULL };
+static const char *calc[] = { "galculator", NULL };
 /* dmenu */
 static const char *passmenu[] = { "passmenu", NULL };
 static const char *maimpick[] = { "maimpick", NULL };
@@ -150,6 +152,7 @@ static Key keys[] = {
 	{ MODKEY|SHIFT,             	XK_i,		spawn,          {.v = browser } },
 	{ MODKEY|SHIFT,             	XK_t,		spawn,          {.v = telegram } },
 	{ MODKEY|SHIFT,             	XK_v,		spawn,          {.v = virt } },
+	{ MODKEY,			XK_grave,	spawn,		{.v = calc } },
 	/* dmenu */
 	{ MODKEY|CTRL,			XK_p,		spawn,		{.v = passmenu } },
 	{ MODKEY|CTRL,			XK_s,		spawn,		{.v = maimpick } },
