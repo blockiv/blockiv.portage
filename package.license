@@ -1,0 +1,7 @@
+media-fonts/corefonts MSttfEULA
+media-fonts/kochi-substitute free-noncomm
+sys-kernel/linux-firmware linux-fw-redistributable no-source-code
+sys-firmware/nvidia-firmware NVIDIA-r2
+media-tv/plex-media-server Plex
+app-benchmarks/ramspeed Alasir
+media-sound/spotify Spotify
