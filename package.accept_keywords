@@ -1,0 +1,5 @@
+app-editors/neovim ~amd64
+net-p2p/tremc ~amd64
+net-libs/nodejs ~amd64
+media-fonts/vollkorn ~amd64
+x11-misc/slstatus **

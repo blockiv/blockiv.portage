@@ -1,1 +1,3 @@
+# Enable persist USE flag for app-admin/doas
 -persist
+

@@ -1,1 +1,1 @@
-dmenu-5.0
+/etc/portage/savedconfig/x11-misc/dmenu-5.0

@@ -1,4 +1,2 @@
 www-client/firefox hwaccel -screencast
-net-libs/nodejs -lto
->=x11-base/xorg-server-1.20.13-r1 xvfb
-
+media-libs/libvpx postproc

@@ -1,2 +1,1 @@
-net-vpn/wireguard-tools wg-quick
-net-firewall/iptables ipv6 nftables conntrack
+net-vpn/wireguard wg-quick
