@@ -21,10 +21,10 @@ sys-kernel/zen-sources ~amd64
 sys-libs/libhugetlbfs ~amd64
 sys-process/bashtop ~amd64
 sys-process/gotop ~amd64
-=www-client/firefox-94.0.1-r1 ~amd64
 x11-libs/libfm ~amd64
 x11-misc/pcmanfm ~amd64
 x11-misc/picom **
+x11-misc/slstatus **
 x11-terms/alacritty ~amd64
 x11-terms/st **
 x11-terms/st-terminfo **
