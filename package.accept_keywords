@@ -3,3 +3,4 @@ net-p2p/tremc ~amd64
 net-libs/nodejs ~amd64
 media-fonts/vollkorn ~amd64
 x11-misc/slstatus **
+dev-lua/lub ~amd64
