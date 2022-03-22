@@ -71,9 +71,9 @@ static const struct arg args[] = {
 	{ separator,		" | ",			NULL },	
 	{ cpu_perc, 		"CPU: %s%%",		NULL },	
 	{ separator,		" | ",			NULL },	
-	{ run_command,		"VOL: %s%%",			"dwm-volume" }, 
+	{ run_command,		"VOL: %s%%",		"/home/four/.local/bin/dwm-volume" }, 
 	{ separator,		" | ",			NULL },	
-	{ run_command, 		"%s",          		"dwm-date" },
+	{ run_command, 		"%s",          		"/home/four/.local/bin/dwm-date" },
 	{ separator,		" | ",			NULL },	
 	{ datetime, 		"%s ",       		"%H:%M:%S" },
 };
