@@ -144,6 +144,11 @@ static Key keys[] = {
 	{ MODKEY|SHIFT,             	XK_c,     	killclient,     {0} },
 	{ WINKEY|SHIFT,             	XK_space, 	togglefloating, {0} },
 	{ WINKEY|SHIFT,             	XK_f,     	togglefullscr,  {0} },
+    /* monitor control */
+    { MODKEY,                       XK_comma,   focusmon,   { .i = -1 } },
+    { MODKEY,                       XK_period,  focusmon,   { .i = +1 } },
+    { MODKEY|SHIFT,                 XK_comma,   tagmon,     { .i = -1 } },
+    { MODKEY|SHIFT,                 XK_period,  tagmon,     { .i = +1 } },
 	/* applications */
 	{ MODKEY|SHIFT,             	XK_Return,	spawn,          {.v = termcmd } },
 	{ MODKEY|SHIFT,             	XK_s,		spawn,          {.v = steam } },
