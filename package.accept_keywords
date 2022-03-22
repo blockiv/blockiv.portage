@@ -16,7 +16,6 @@ net-p2p/tremc ~amd64
 sci-astronomy/celestia ~amd64
 sys-apps/bat ~amd64
 sys-apps/dust ~amd64
-sys-firmware/nvidia-firmware ~amd64
 sys-kernel/zen-sources ~amd64
 sys-libs/libhugetlbfs ~amd64
 sys-process/bashtop ~amd64
@@ -31,3 +30,4 @@ x11-terms/st-terminfo **
 dev-lua/luv ~amd64
 dev-libs/libvterm ~amd64
 net-misc/xmrig ~amd64
+games-util/game-device-udev-rules ~amd64
