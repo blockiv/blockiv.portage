@@ -1,50 +1,13 @@
-# required by x11-libs/libxcb-1.14::gentoo
-# required by app-editors/vscodium-1.64.2::gentoo
-# required by @selected
-# required by @world (argument)
 >=x11-libs/libXdmcp-1.1.3-r1 abi_x86_32
-# required by x11-libs/libXdmcp-1.1.3-r1::gentoo
-# required by www-client/w3m-0.5.3_p20210102::gentoo[X]
-# required by virtual/w3m-1::gentoo
-# required by app-text/xmlto-0.0.28-r6::gentoo[text]
-# required by x11-misc/shared-mime-info-2.1::gentoo
-# required by dev-lang/vala-0.52.10::gentoo
-# required by gnome-base/librsvg-2.50.7::gentoo[vala]
-# required by media-libs/gegl-0.4.32::gentoo[svg]
-# required by media-gfx/gimp-2.10.28-r1::gentoo
-# required by @selected
-# required by @world (argument)
 >=dev-libs/libbsd-0.11.3 abi_x86_32
-# required by dev-libs/libbsd-0.11.3::gentoo
-# required by x11-libs/libICE-1.0.10-r1::gentoo
-# required by sys-apps/groff-1.22.4::gentoo[X]
-# required by sys-apps/man-db-2.9.4-r1::gentoo
-# required by virtual/man-0-r4::mv
-# required by @system
-# required by @world (argument)
 >=app-crypt/libmd-1.0.4 abi_x86_32
-# required by dev-python/pyparsing-3.0.7-r1::gentoo
-# required by dev-python/packaging-21.3-r2::gentoo
-# required by dev-python/wheel-0.37.1-r1::gentoo
-# required by dev-python/pycryptodome-3.14.1::gentoo
-# required by net-misc/yt-dlp-2022.2.4-r1::gentoo
-# required by net-misc/youtube-dl-2021.12.17-r1::gentoo[yt-dlp]
-# required by @selected
-# required by @world (argument)
 >=dev-python/installer-0.4.0_p20220124 python_targets_python3_10
-# required by dev-python/setuptools_scm-6.4.1::gentoo
-# required by dev-python/importlib_metadata-4.10.1::gentoo
-# required by dev-python/sphinx-4.4.0::gentoo[-python_targets_python3_8,python_targets_python3_9]
-# required by dev-python/sphinxcontrib-applehelp-1.0.2::gentoo
 >=dev-python/wheel-0.37.1-r1 python_targets_python3_10
-# required by dev-python/wheel-0.37.1-r1::gentoo
-# required by dev-python/pycryptodome-3.14.1::gentoo
-# required by net-misc/yt-dlp-2022.2.4-r1::gentoo
-# required by net-misc/youtube-dl-2021.12.17-r1::gentoo[yt-dlp]
-# required by @selected
-# required by @world (argument)
 >=dev-python/flit_core-3.6.0-r2 python_targets_python3_10
-# required by www-client/firefox-91.6.1::gentoo[system-libvpx]
-# required by @selected
-# required by @world (argument)
 >=media-libs/libvpx-1.11.0 postproc
+>=dev-python/appdirs-1.4.4-r2 python_targets_python3_10
+>=dev-python/jaraco-text-3.7.0-r2 python_targets_python3_10
+>=dev-python/more-itertools-8.12.0-r1 python_targets_python3_10
+>=dev-python/ordered-set-4.1.0 python_targets_python3_10
+>=dev-python/jaraco-context-4.1.1-r2 python_targets_python3_10
+>=dev-python/jaraco-functools-3.5.0-r2 python_targets_python3_10
