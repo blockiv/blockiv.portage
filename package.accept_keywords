@@ -28,3 +28,6 @@ x11-misc/slstatus **
 x11-terms/alacritty ~amd64
 x11-terms/st **
 x11-terms/st-terminfo **
+dev-lua/luv ~amd64
+dev-libs/libvterm ~amd64
+net-misc/xmrig ~amd64
