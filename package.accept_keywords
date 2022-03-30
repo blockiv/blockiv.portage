@@ -8,6 +8,7 @@ dev-haskell/* ~amd64
 dev-lang/ghc ~amd64
 dev-util/github-cli **
 lxde-base/lxappearance ~amd64
+media-fonts/fontawesome **
 media-fonts/gohufont ~amd64
 media-gfx/ueberzug ~amd64
 media-tv/plex-media-server ~amd64
