@@ -6,5 +6,6 @@ x11-misc/picom **
 x11-misc/slstatus **
 dev-lua/luv ~amd64
 dev-libs/libvterm ~amd64
+media-fonts/fontawesome **
 media-sound/spotify ~amd64
 media-sound/spotify-tui ~amd64
