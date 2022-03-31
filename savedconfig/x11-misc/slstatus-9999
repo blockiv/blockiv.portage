@@ -65,15 +65,17 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function 		format          	argument */
-	{ kernel_release, 	"%s",			NULL },	
+	{ kernel_release, 	" %s",			NULL },	
 	{ separator,		" | ",			NULL },	
-	{ ram_perc, 		"RAM: %s%%",		NULL },	
+	{ run_command, 	    "%s",			"dwm-vpn" },	
 	{ separator,		" | ",			NULL },	
-	{ cpu_perc, 		"CPU: %s%%",		NULL },	
+	{ ram_perc, 		" %s%%",		NULL },	
 	{ separator,		" | ",			NULL },	
-	{ run_command,		"VOL: %s%%",		"/home/four/.local/bin/dwm-volume" }, 
+	{ cpu_perc, 		" %s%%",		NULL },	
 	{ separator,		" | ",			NULL },	
-	{ run_command, 		"%s",          		"/home/four/.local/bin/dwm-date" },
+	{ run_command,		" %s%%",		"dwm-volume" }, 
 	{ separator,		" | ",			NULL },	
-	{ datetime, 		"%s ",       		"%H:%M:%S" },
+	{ run_command, 		"  %s",        "dwm-date" },
+	{ separator,		" | ",			NULL },	
+	{ datetime, 		" %s ",       	"%H:%M:%S" },
 };
