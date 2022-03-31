@@ -71,7 +71,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0";
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon , NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-c", "-m", dmenumon , NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *suspend[]  = { "loginctl", "suspend", NULL };
 /* volume control */
@@ -90,9 +90,11 @@ static const char *browser[] = { "firefox", NULL };
 static const char *spotify[] = { "spotify", NULL };
 static const char *discord[] = { "~/.local/bin/discord", NULL };
 static const char *telegram[] = { "telegram-desktop", NULL };
+static const char *vifm[] = { "alacritty", "-e", "vifm", NULL };
 static const char *calc[] = { "galculator", NULL };
 /* dmenu */
 static const char *passmenu[] = { "passmenu", NULL };
+static const char *powermenu[] = { "powermenu", NULL };
 static const char *maimpick[] = { "maimpick", NULL };
 
 static Key keys[] = {
@@ -151,10 +153,12 @@ static Key keys[] = {
 	{ MODKEY|SHIFT,             	XK_d,		spawn,          {.v = discord } },
 	{ MODKEY|SHIFT,             	XK_i,		spawn,          {.v = browser } },
 	{ MODKEY|SHIFT,             	XK_t,		spawn,          {.v = telegram } },
+	{ MODKEY|SHIFT,             	XK_f,		spawn,          {.v = vifm } },
 	{ MODKEY,			            XK_grave,	spawn,		    {.v = calc } },
 	/* dmenu */
 	{ MODKEY|CTRL,			XK_p,		spawn,		{.v = passmenu } },
 	{ MODKEY|CTRL,			XK_s,		spawn,		{.v = maimpick } },
+	{ MODKEY|CTRL,			XK_z,		spawn,		{.v = powermenu } },
 	/* volume control */
 	{ 0, XF86XK_AudioMute,		    spawn,		{.v = volumemute } },
 	{ 0, XF86XK_AudioLowerVolume,	spawn,		{.v = volumedown } },
