@@ -65,6 +65,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function 		format          	argument */
+	{ run_command,		"%s",			"/home/four/.local/bin/dwm-vpn" }, 
+	{ separator,		" | ",			NULL },	
 	{ run_command,		"  %s",			"/home/four/.local/bin/dwm-wifi" }, 
 	{ separator,		" | ",			NULL },	
 	{ run_command, 		" %s%%",		"/home/four/.local/bin/dwm-backlight" },	
