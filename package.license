@@ -1,6 +1,8 @@
-sys-kernel/linux-firmware linux-fw-redistributable no-source-code
-sys-firmware/intel-microcode intel-ucode
+app-arch/unrar unRAR
 media-fonts/corefonts MSttfEULA
 media-fonts/kochi-substitute free-noncomm
-sys-power/dptfxtract ipw3945
 media-sound/spotify Spotify
+sys-firmware/intel-microcode intel-ucode
+sys-kernel/linux-firmware linux-fw-redistributable no-source-code
+sys-power/dptfxtract ipw3945
+x11-libs/agg free-noncomm
