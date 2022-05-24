@@ -25,14 +25,15 @@ static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* class      	            instance	title       	tags mask     	isfloating   monitor */
-	{ "Firefox",  		        NULL,  	    NULL,           1,		        0,           -1 },
-	{ "discord",  		        NULL,       NULL,           1 << 7,       	0,           -1 },
+	{ "Firefox",  		    NULL,  	NULL,           1,		0,           -1 },
+	{ NULL,  		    NULL,  	"Pulsemixer",	0,		1,           -1 },
+	{ "discord",  		    NULL,       NULL,           1 << 7,       	0,           -1 },
 	{ "TelegramDesktop",  	    NULL,       NULL,           1 << 7,       	0,           -1 },
-	{ "Spotify",  		        NULL,       NULL,           1 << 6,       	0,           -1 },
-	{ "VSCodium",  		        NULL,       NULL,           1 << 2,       	0,           -1 },
-	{ "Galculator",  	        NULL,       NULL,           0,       	    1,           -1 },
-	{ NULL,                     "Toolkit",	NULL,			0,       	    1,           -1 },
-	{ NULL,                     NULL,	"Picture-in-Picture",		0,       	1,           -1 },
+	{ "Spotify",  		    NULL,       NULL,           1 << 6,       	0,           -1 },
+	{ "VSCodium",  		    NULL,       NULL,           1 << 2,       	0,           -1 },
+	{ "Galculator",  	    NULL,       NULL,           0,		1,           -1 },
+	{ NULL,                     "Toolkit",	NULL,		0,		1,           -1 },
+	{ NULL,                     NULL,	"Picture-in-Picture",	0, 	1,           -1 },
 };
 
 /* layout(s) */
@@ -74,9 +75,10 @@ static char dmenumon[2] = "0";
 static const char *dmenucmd[] = { "dmenu_run", "-c", "-m", dmenumon , NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 /* volume control */
-static const *volumemute[] = { "pactl", "set-sink-mute", "0", "toggle", NULL };
-static const *volumeup[] = { "pactl", "set-sink-volume", "0", "+5%", NULL };
-static const *volumedown[] = { "pactl", "set-sink-volume", "0", "-5%", NULL };
+static const *volumemute[] = { "pamixer", "-t", NULL };
+static const *volumeup[] = { "pamixer", "-i", "1", NULL };
+static const *volumedown[] = { "pamixer", "-d", "1", NULL };
+static const *pulsemixer[] = { "st", "-g", "80x10", "-t", "Pulsemixer", "-e", "pulsemixer", NULL };
 /* media control */
 static const *playpause[] = { "playerctl", "--all-players", "play-pause", NULL };
 static const *nexttrack[] = { "playerctl", "--all-players", "next", NULL };
@@ -143,11 +145,11 @@ static Key keys[] = {
 	{ WINKEY,                       XK_space, 	setlayout,      {0} },
 	{ MODKEY|SHIFT,             	XK_c,     	killclient,     {0} },
 	{ WINKEY|SHIFT,             	XK_space, 	togglefloating, {0} },
-    /* monitor control */
-    { MODKEY,                       XK_comma,   focusmon,   { .i = -1 } },
-    { MODKEY,                       XK_period,  focusmon,   { .i = +1 } },
-    { MODKEY|SHIFT,                 XK_comma,   tagmon,     { .i = -1 } },
-    { MODKEY|SHIFT,                 XK_period,  tagmon,     { .i = +1 } },
+	/* monitor control */
+	{ MODKEY,                       XK_comma,   focusmon,   { .i = -1 } },
+	{ MODKEY,                       XK_period,  focusmon,   { .i = +1 } },
+	{ MODKEY|SHIFT,                 XK_comma,   tagmon,     { .i = -1 } },
+	{ MODKEY|SHIFT,                 XK_period,  tagmon,     { .i = +1 } },
 	/* applications */
 	{ MODKEY|SHIFT,             	XK_Return,	spawn,          {.v = termcmd } },
 	{ MODKEY|SHIFT,             	XK_m,		spawn,          {.v = spotify } },
@@ -162,11 +164,12 @@ static Key keys[] = {
 	{ MODKEY|CTRL,			XK_s,		spawn,		{.v = maimpick } },
 	{ MODKEY|CTRL,			XK_z,		spawn,		{.v = powermenu } },
 	/* volume control */
-	{ 0, XF86XK_AudioMute,		    spawn,		{.v = volumemute } },
+	{ MODKEY|CTRL,			XK_v,		spawn,		{.v = pulsemixer } },
+	{ 0, XF86XK_AudioMute,		spawn,		{.v = volumemute } },
 	{ 0, XF86XK_AudioLowerVolume,	spawn,		{.v = volumedown } },
 	{ 0, XF86XK_AudioRaiseVolume,	spawn,		{.v = volumeup } },
 	/* media control */
-    { MODKEY,			XK_F1,		spawn,          {.v = prevtrack } },
+	{ MODKEY,			XK_F1,		spawn,          {.v = prevtrack } },
 	{ MODKEY,			XK_F2,		spawn,          {.v = playpause } },
 	{ MODKEY,			XK_F3,		spawn,          {.v = nexttrack } },
 	/* tags */

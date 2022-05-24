@@ -1,0 +1,35 @@
+# required by kde-frameworks/qqc2-desktop-style-5.92.0::gentoo
+# required by kde-plasma/plasma-desktop-5.24.4-r1::gentoo
+# required by plasma-desktop (argument)
+>=kde-frameworks/sonnet-5.92.0 qml
+# required by kde-frameworks/kfilemetadata-5.92.0::gentoo[pdf]
+# required by kde-frameworks/baloo-5.92.0::gentoo
+# required by kde-plasma/plasma-workspace-5.24.4::gentoo[semantic-desktop]
+# required by kde-plasma/plasma-desktop-5.24.4-r1::gentoo
+# required by plasma-desktop (argument)
+>=app-text/poppler-22.03.0 qt5
+# required by kde-plasma/plasma-workspace-5.24.4::gentoo
+# required by kde-plasma/plasma-desktop-5.24.4-r1::gentoo
+# required by plasma-desktop (argument)
+>=kde-frameworks/prison-5.92.0 qml
+# required by kde-plasma/kwin-5.24.4-r1::gentoo
+# required by kde-plasma/libkworkspace-5.24.4::gentoo
+# required by kde-plasma/plasma-workspace-5.24.4::gentoo
+# required by kde-plasma/plasma-desktop-5.24.4-r1::gentoo
+# required by plasma-desktop (argument)
+>=media-libs/mesa-21.3.7 wayland
+# required by kde-plasma/kwin-5.24.4-r1::gentoo
+# required by kde-plasma/libkworkspace-5.24.4::gentoo
+# required by kde-plasma/plasma-workspace-5.24.4::gentoo
+# required by kde-plasma/plasma-desktop-5.24.4-r1::gentoo
+# required by plasma-desktop (argument)
+>=kde-frameworks/kitemmodels-5.92.0 qml
+# required by media-libs/mesa-21.3.7::gentoo[wayland]
+# required by x11-base/xwayland-21.1.4::gentoo
+# required by kde-plasma/kwin-5.24.4-r1::gentoo
+# required by kde-plasma/libkworkspace-5.24.4::gentoo
+# required by kde-plasma/plasma-workspace-5.24.4::gentoo
+# required by kde-plasma/plasma-desktop-5.24.4-r1::gentoo
+# required by plasma-desktop (argument)
+>=dev-libs/wayland-1.20.0 abi_x86_32
+>=net-dialup/ppp-2.4.9-r5 ipv6

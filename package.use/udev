@@ -1,0 +1,8 @@
+sys-fs/udev abi_x86_32
+# required by sys-fs/udev-249.6-r2::gentoo
+# required by sys-fs/udev (argument)
+>=sys-libs/libcap-2.63 abi_x86_32
+# required by sys-libs/libcap-2.63::gentoo[pam]
+# required by sys-fs/udev-249.6-r2::gentoo
+# required by sys-fs/udev (argument)
+>=sys-libs/pam-1.5.1_p20210622-r1 abi_x86_32
