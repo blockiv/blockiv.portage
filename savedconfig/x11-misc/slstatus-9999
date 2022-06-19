@@ -67,15 +67,15 @@ static const struct arg args[] = {
 	/* function 		format          	argument */
 	{ run_command,		"%s",			"/home/four/.local/bin/dwm-vpn" }, 
 	{ separator,		" | ",			NULL },	
-	{ run_command,		"  %s",			"/home/four/.local/bin/dwm-wifi" }, 
+	{ run_command,		" %s",		"/home/four/.local/bin/dwm-wifi" }, 
 	{ separator,		" | ",			NULL },	
 	{ run_command, 		" %s%%",		"/home/four/.local/bin/dwm-backlight" },	
 	{ separator,		" | ",			NULL },	
-	{ run_command,		" %s",		"/home/four/.local/bin/dwm-volume" }, 
+	{ run_command,		" %s",		    "/home/four/.local/bin/dwm-volume" }, 
 	{ separator,		" | ",			NULL },	
-	{ battery_perc,		"  %s%%",		"BAT0" },
+	{ battery_perc,		" %s%%",		"BAT0" },
 	{ separator,		" | ",			NULL },	
-	{ run_command, 		"  %s",          		"/home/four/.local/bin/dwm-date" },
-	{ separator,		" | ",			NULL },	
-	{ datetime, 		" %s ",       		"%H:%M:%S" },
+	{ run_command, 		"^b#9ccfd8^ ^c#191724^  %s",        "/home/four/.local/bin/dwm-date" },
+/*	{ separator,		"^d^ | ",			NULL },	*/
+	{ datetime, 		"^b#a6d4dc^ ^c#181725^  ^b#9ccfd8^ ^c#191724^ %s ",       	"%H:%M:%S" },
 };
